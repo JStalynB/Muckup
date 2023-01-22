@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>utpl</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+  <!-- nav bar -->
+
+  <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="javascript:void(0)"> <a href="http://127.0.0.1:5500/login.html"><img src="https://cdn.discordapp.com/attachments/726945708023742496/1065721084105732126/Imagen1.png" alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a> </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mynavbar">
+        
+        <form class="d-flex">
+          <input class="form-control me-2" type="text" placeholder="Search">
+          <button class="btn btn-primary" type="button">Search</button>
+        </form>
+      </div>
+    </div>
+  </nav>
+  
+  
+  
+  
+  <a href="http://127.0.0.1:5500/index.html">
+    <h1>UTPL</h1>
+  </a>
+
+  <h2 style="color: aliceblue;">Avance</h2>
+  <div class="progress">
+    <div class="progress-bar" style="width:33%">33%</div>
+  </div>
+  <div class="container mt-3">
+
+    <span class="badge bg-primary">Capítulo 1</span>
+    <span class="badge bg-secondary">Capítulo 2</span>
+    <span class="badge bg-success">Capítulo 3</span>
+    <span class="badge bg-danger">Capítulo 4</span>
+    <span class="badge bg-warning">Capítulo 5</span>
+    <span class="badge bg-info">Capítulo 6</span>
+    <span class="badge bg-danger">Capítulo 7</span>
+    <span class="badge bg-dark">Capítulo 8</span>
+  </div>
+  <!-- cuerpo  -->
+
+
+
+  <div class="container mt-3">
+
+    <div style="background-color: #D9D9D9">
+
+      <div class="container p-5 my-5 border text-center">
+        <img src="https://cdn.discordapp.com/attachments/726945708023742496/1065667840264392714/image.png"
+          class="rounded img-fluid" alt="Responsive image">
+      </div>
+      <div class="container p-5 my-5 border">
+        <h2 class="text-center"> Regression</h2>
+        <p>The term regression is used when you try to find the relationship between variables.
+
+          In Machine Learning, and in statistical modeling, that relationship is used to predict the outcome of future
+          events.</p>
+
+        <h2>Linear Regression</h2>
+        <p>Linear regression uses the relationship between the data-points to draw a straight line through all them.
+
+          This line can be used to predict future values.</p>
+        <h2>How Does it Work?</h2>
+        <p>Python has methods for finding a relationship between data-points and to draw a line of linear regression. We
+          will show you how to use these methods instead of going through the mathematic formula.
+
+          In the example below, the x-axis represents age, and the y-axis represents speed. We have registered the age
+          and speed of 13 cars as they were passing a tollbooth. Let us see if the data we collected could be used in a
+          linear regression:</p>
+          <h2>Example </h2>
+          <p>Import the modules you need.
+
+            You can learn about the Matplotlib module in our Matplotlib Tutorial.
+            
+            You can learn about the SciPy module in our SciPy Tutorial.</p>
+            
+
+              <p> import matplotlib.pyplot as plt</p>
+                <p>from scipy import stats</p>
+              
+                  <p> Create the arrays that represent the values of the x and y axis:</p>
+              
+                    <p>x = [5,7,8,7,2,17,2,9,4,11,12,9,6]</p>
+                      <p>y = [99,86,87,88,111,86,103,87,94,78,77,85,86]</p>
+              
+                        <p>Execute a method that returns some important key values of Linear Regression:</p>
+              
+                          <p>slope, intercept, r, p, std_err = stats.linregress(x, y)</p>
+              
+                            <p> Create a function that uses the slope and intercept values to return a new value. This new value represents where on the y-axis the corresponding x value will be placed:</p>
+              
+                              <p>def myfunc(x):</p>
+                                <p>  return slope * x + intercept</p>
+              
+              Run each value of the x array through the function. This will result in a new array with new values for the y-axis:</p>
+              
+              mymodel = list(map(myfunc, x))</p>
+              
+              Draw the original scatter plot:</p>
+              
+              plt.scatter(x, y)</p>
+              
+              Draw the line of linear regression:</p>
+              
+              plt.plot(x, mymodel)</p>
+              
+              Display the diagram:</p>
+              
+              plt.show()</p>
+              </p>
+              <div class="text-center">
+                <img src="https://cdn.discordapp.com/attachments/726945708023742496/1065718117243834448/image.png" class="rounded img-fluid" alt="Responsive image">
+              </div>
+      </div>
+
+    </div>
+    <div class="container mt-3">
+    
+      
+      
+      <div class="btn-group">
+        <button type="button" class="btn btn-primary"><a href="http://127.0.0.1:5500/progreso2.html" style="color: #D9D9D9;"> Next</a> </button>        
+      </div>
+</body>
+
+</html>

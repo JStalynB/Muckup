@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>utpl</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+
+<body>
+    <!-- nav bar -->
+
+    <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="javascript:void(0)"> <a href="http://127.0.0.1:5500/login.html"><img
+                        src="https://cdn.discordapp.com/attachments/726945708023742496/1065721084105732126/Imagen1.png"
+                        alt="Avatar Logo" style="width:40px;" class="rounded-pill"></a> </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mynavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="mynavbar">
+
+                <form class="d-flex">
+                    <input class="form-control me-2" type="text" placeholder="Search">
+                    <button class="btn btn-primary" type="button">Search</button>
+                </form>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <a href="http://127.0.0.1:5500/index.html">
+        <h1>UTPL</h1>
+    </a>
+
+    <h2 style="color: aliceblue;">Avance</h2>
+    <div class="progress">
+        <div class="progress-bar" style="width:99%">99%</div>
+    </div>
+    <div class="container mt-3">
+
+        <span class="badge bg-primary">Capítulo 1</span>
+        <span class="badge bg-secondary">Capítulo 2</span>
+        <span class="badge bg-success">Capítulo 3</span>
+        <span class="badge bg-danger">Capítulo 4</span>
+        <span class="badge bg-warning">Capítulo 5</span>
+        <span class="badge bg-info">Capítulo 6</span>
+        <span class="badge bg-danger">Capítulo 7</span>
+        <span class="badge bg-dark">Capítulo 8</span>
+    </div>
+    <!-- cuerpo  -->
+
+
+
+    <div class="container mt-3">
+
+        <div style="background-color: #D9D9D9">
+
+           
+            <div class="container p-5 my-5 border">
+                <h2 class="text-center"> Multiple Regression</h2>
+                <p>Multiple regression is like linear regression, but with more than one independent value, meaning that we try to predict a value based on two or more variables.
+
+                    Take a look at the data set below, it contains some information about cars.</p>
+
+                <h2>table example</h2>
+                <div >
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="ws-light-grey">
+                                <td>Car</td>
+                                <td>Model</td>
+                                <td>Volume</td>
+                                <td>Weight</td>
+                                <td>CO2</td>
+                                <td style="width:10px"></td>
+                            </tr>
+                        </thead>
+                    </table>
+                    <div style="height:410px;overflow:auto;">
+                        <table class="table table-bordered" style="margin:0;border-top:none;">
+                            <tbody>
+                                <tr>
+                                    <td>Toyota</td>
+                                    <td>Aygo</td>
+                                    <td>1000</td>
+                                    <td>790</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Mitsubishi</td>
+                                    <td>Space Star</td>
+                                    <td>1200</td>
+                                    <td>1160</td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <td>Skoda</td>
+                                    <td>Citigo</td>
+                                    <td>1000</td>
+                                    <td>929</td>
+                                    <td>95</td>
+                                </tr>
+                                <tr>
+                                    <td>Fiat</td>
+                                    <td>500</td>
+                                    <td>900</td>
+                                    <td>865</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Mini</td>
+                                    <td>Cooper</td>
+                                    <td>1500</td>
+                                    <td>1140</td>
+                                    <td>105</td>
+                                </tr>
+                                <tr>
+                                    <td>VW</td>
+                                    <td>Up!</td>
+                                    <td>1000</td>
+                                    <td>929</td>
+                                    <td>105</td>
+                                </tr>
+                                <tr>
+                                    <td>Skoda</td>
+                                    <td>Fabia</td>
+                                    <td>1400</td>
+                                    <td>1109</td>
+                                    <td>90</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercedes</td>
+                                    <td>A-Class</td>
+                                    <td>1500</td>
+                                    <td>1365</td>
+                                    <td>92</td>
+                                </tr>
+                                <tr>
+                                    <td>Ford</td>
+                                    <td>Fiesta</td>
+                                    <td>1500</td>
+                                    <td>1112</td>
+                                    <td>98</td>
+                                </tr>
+                                <tr>
+                                    <td>Audi</td>
+                                    <td>A1</td>
+                                    <td>1600</td>
+                                    <td>1150</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Hyundai</td>
+                                    <td>I20</td>
+                                    <td>1100</td>
+                                    <td>980</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Suzuki</td>
+                                    <td>Swift</td>
+                                    <td>1300</td>
+                                    <td>990</td>
+                                    <td>101</td>
+                                </tr>
+                                <tr>
+                                    <td>Ford</td>
+                                    <td>Fiesta</td>
+                                    <td>1000</td>
+                                    <td>1112</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Honda</td>
+                                    <td>Civic</td>
+                                    <td>1600</td>
+                                    <td>1252</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Hundai</td>
+                                    <td>I30</td>
+                                    <td>1600</td>
+                                    <td>1326</td>
+                                    <td>97</td>
+                                </tr>
+                                <tr>
+                                    <td>Opel</td>
+                                    <td>Astra</td>
+                                    <td>1600</td>
+                                    <td>1330</td>
+                                    <td>97</td>
+                                </tr>
+                                <tr>
+                                    <td>BMW</td>
+                                    <td>1</td>
+                                    <td>1600</td>
+                                    <td>1365</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Mazda</td>
+                                    <td>3</td>
+                                    <td>2200</td>
+                                    <td>1280</td>
+                                    <td>104</td>
+                                </tr>
+                                <tr>
+                                    <td>Skoda</td>
+                                    <td>Rapid</td>
+                                    <td>1600</td>
+                                    <td>1119</td>
+                                    <td>104</td>
+                                </tr>
+                                <tr>
+                                    <td>Ford</td>
+                                    <td>Focus</td>
+                                    <td>2000</td>
+                                    <td>1328</td>
+                                    <td>105</td>
+                                </tr>
+                                <tr>
+                                    <td>Ford</td>
+                                    <td>Mondeo</td>
+                                    <td>1600</td>
+                                    <td>1584</td>
+                                    <td>94</td>
+                                </tr>
+                                <tr>
+                                    <td>Opel</td>
+                                    <td>Insignia</td>
+                                    <td>2000</td>
+                                    <td>1428</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercedes</td>
+                                    <td>C-Class</td>
+                                    <td>2100</td>
+                                    <td>1365</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Skoda</td>
+                                    <td>Octavia</td>
+                                    <td>1600</td>
+                                    <td>1415</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Volvo</td>
+                                    <td>S60</td>
+                                    <td>2000</td>
+                                    <td>1415</td>
+                                    <td>99</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercedes</td>
+                                    <td>CLA</td>
+                                    <td>1500</td>
+                                    <td>1465</td>
+                                    <td>102</td>
+                                </tr>
+                                <tr>
+                                    <td>Audi</td>
+                                    <td>A4</td>
+                                    <td>2000</td>
+                                    <td>1490</td>
+                                    <td>104</td>
+                                </tr>
+                                <tr>
+                                    <td>Audi</td>
+                                    <td>A6</td>
+                                    <td>2000</td>
+                                    <td>1725</td>
+                                    <td>114</td>
+                                </tr>
+                                <tr>
+                                    <td>Volvo</td>
+                                    <td>V70</td>
+                                    <td>1600</td>
+                                    <td>1523</td>
+                                    <td>109</td>
+                                </tr>
+                                <tr>
+                                    <td>BMW</td>
+                                    <td>5</td>
+                                    <td>2000</td>
+                                    <td>1705</td>
+                                    <td>114</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercedes</td>
+                                    <td>E-Class</td>
+                                    <td>2100</td>
+                                    <td>1605</td>
+                                    <td>115</td>
+                                </tr>
+                                <tr>
+                                    <td>Volvo</td>
+                                    <td>XC70</td>
+                                    <td>2000</td>
+                                    <td>1746</td>
+                                    <td>117</td>
+                                </tr>
+                                <tr>
+                                    <td>Ford</td>
+                                    <td>B-Max</td>
+                                    <td>1600</td>
+                                    <td>1235</td>
+                                    <td>104</td>
+                                </tr>
+                                <tr>
+                                    <td>BMW</td>
+                                    <td>2</td>
+                                    <td>1600</td>
+                                    <td>1390</td>
+                                    <td>108</td>
+                                </tr>
+                                <tr>
+                                    <td>Opel</td>
+                                    <td>Zafira</td>
+                                    <td>1600</td>
+                                    <td>1405</td>
+                                    <td>109</td>
+                                </tr>
+                                <tr>
+                                    <td>Mercedes</td>
+                                    <td>SLK</td>
+                                    <td>2500</td>
+                                    <td>1395</td>
+                                    <td>120</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                </table>
+           
+                <h2>How Does it Work?</h2>
+                <p>In Python we have modules that will do the work for us. Start by importing the Pandas module.</p>
+                <h2>
+
+                    import pandas
+                     </h2>
+                <p>Learn about the Pandas module in our Pandas Tutorial.
+
+                    The Pandas module allows us to read csv files and return a DataFrame object.
+                    
+                    The file is meant for testing purposes only, you can download it here: data.csv</p>
+
+
+                <p> i
+
+                    df = pandas.read_csv("data.csv")
+                    </p>
+                <p>Then make a list of the independent values and call this variable X. </p>
+
+                <p> Put the dependent values in a variable called y.</p>
+
+                <p>X = df[['Weight', 'Volume']]</p>
+                <p>y = df['CO2'] </p>
+
+                <p>Tip: It is common to name the list of independent values with a upper case X, and the list of dependent values with a lower case y.</p>
+
+                <p>We will use some methods from the sklearn module, so we will have to import that module as well:</p>
+
+                <p> from sklearn import linear_model /p>
+
+                <p>From the sklearn module we will use the LinearRegression() method to create a linear regression object.</p>
+                <p> This object has a method called fit() that takes the independent and dependent values as parameters and fills the regression object with data that describes the relationship:</p>
+
+                regr = linear_model.LinearRegression()</p>
+
+                regr.fit(X, y) </p>
+
+                Now we have a regression object that are ready to predict CO2 values based on a car's weight and volume:</p>
+
+                #predict the CO2 emission of a car where the weight is 2300kg, and the volume is 1300cm3:</p>
+
+                DpredictedCO2 = regr.predict([[2300, 1300]])</p>
+
+                 <h5>Result:</h5>
+
+                 [107.2087328]</p>
+
+                </p>
+                <div class="text-center">
+                    <img src="https://cdn.discordapp.com/attachments/726945708023742496/1065749181853077595/image.png"
+                        class="rounded img-fluid" alt="Responsive image">
+                </div>
+            </div>
+
+        </div>
+        <div class="container mt-3 " >
+
+
+            <div class="btn-group" >
+                <button type="button" class="btn btn-primary" ><a href="http://127.0.0.1:5500/progreso2.html" style="color: #D9D9D9;" > Previus</a></button>
+            </div>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary">Finish</button>
+            </div>
+</body>
+
+</html>
